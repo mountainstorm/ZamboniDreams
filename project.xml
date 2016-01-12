@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="ZamboniDreams"
+          package="com.mountainstorm.zamboni-dreams"
+          version="1.0.0"
+          company="mountainstorm" />
+
+    <app file="ZamboniDreams" main="Main" path="bin" />
+
+    <window fps="60" background="0x000000" />
+    <window width="1920" height="1080" resizable="true" unless="mobile" />
+    <window fullscreen="true" if="mobile" />
+    <window orientation="landscape" vsync="true" antialiasing="0" if="cpp" />
+
+    <source path="src" />
+
+    <haxelib name="HaxePunk" />
+    <haxelib name="msx" />
+
+    <assets path="assets/graphics" rename="graphics" include="*.png|*.jpg" />
+    <assets path="assets/audio" rename="audio" include="*.mp3" if="flash" />
+    <assets path="assets/audio" rename="audio" include="*.wav|*.ogg" unless="flash" />
+    <assets path="assets/font" rename="font" include="*.ttf" />
+    <assets path="assets/locations" rename="locations" include="*" />
+    <assets path="assets/" rename="" include="levels.json" />
+
+    <icon path="assets/HaxePunk.svg" />
+</project>
